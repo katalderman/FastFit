@@ -14,7 +14,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
   <!-- MY CSS -->
   <link rel="stylesheet" href="css/styles.css">
@@ -32,12 +32,12 @@
 </head>
 <body>
   <main>
-    <div class="container container-custom">
+    <div class="container">
       <!-- 01 JUMBOTRON -->
       <div class="my-jumbotron row row1">
         <!-- <div class="container-fluid"> -->
         <div class="row row1">
-          <a href="#"><img class="logo-image-top" src="images/logo_fastfit_green.png"></a>
+          <a href="#contactform"><img class="logo-image-top" src="images/logo_fastfit_green.png"></a>
         </div>
         <div class="row row1">
           <!-- LEFT PART OF JUMBOTRON  -->
@@ -45,10 +45,10 @@
             <!--nothing -->
           </div>
           <div class="col-md-6">
-            <h1 class="headline">FastFit</h1>
+            <h1 class="headline text-center">FastFit</h1>
             <h2 class="subhead">Fast Workouts for Busy People</h2>
             <div class="div-downloads text-center">
-              <img class="appicons" src="images/playstore.png" alt="Get FastFit on the Android App Store">
+              <img class="appicons my-2" src="images/playstore.png" alt="Get FastFit on the Android App Store">
               <img class="appicons" src="images/appstore.png" alt="Get FastFit on the Apple App Store">
             </div>
           </div>
@@ -80,9 +80,6 @@
         <!-- 3 columns -->
         <div class="col-md-4 text-center">
           <img class="circle-image" src="images/01-circle.jpg" alt="">
-          <div class="centered">
-            CUSTOMIZED WORKOUTS
-          </div>
           <p>CUSTOMIZED WORKOUTS</br>
             Customized just for you, our fast workouts fit into your busy lifestyle - you can work out anywhere and for however long you want!</p>
           </div>
@@ -130,11 +127,11 @@
               <div class="col-md-6 fullwidthimage_05 d-none d-md-block ">
               </div>
               <div class="purplebox text-center d-none d-md-block">
-                01
+                02
               </div>
-              <div class="col-md-6 px-2">
+              <div class="col-md-6 pl-75">
                 <h5>DO WHAT YOU WANT</h5>
-                <p class="py-50">From yoga to pilates, running to walking, strength training and flexibility, you can do whatever workout you want. Get fit doing things you enjoy!</p>
+                <p class="pt-50">From yoga to pilates, running to walking, strength training and flexibility, you can do whatever workout you want. Get fit doing things you enjoy!</p>
                 <img class="" src="images/rectangle.png" alt="">
               </div>
             </div>
@@ -151,13 +148,14 @@
               <div class="col-md-6 fullwidthimage_06 d-none d-md-block">
               </div>
               <div class="purplebox text-center d-none d-md-block">
-                01
+                03
               </div>
             </div>
             <!-- 06 END OF WHY USE FASTFIT? STAY ACCOUNTABLE -->
 
             <!-- 07 DOWNLOAD APP -->
-            <div class="row full-width-FOOTER">
+            <footer class="contactform" id="contactform">
+                          <div class="row full-width-FOOTER">
               <div class="col-md-12 text-center">
                 <h1 class="headline-bottom">Download FastFit</h1>
                 <h2 class="subhead-bottom">Start Getting Fit Today!</h2>
@@ -181,14 +179,54 @@
                   </div>
                 </div>
                 <!-- 08 END OF FOOTER -->
-
               </div>
-
               <!-- 07 END OF DOWNLOAD APP -->
             </div>
+            </footer>
             <!-- END OF CONTAINER -->
+
 
           </div>
         </main>
       </body>
+
+      <!-- JS snippet for tooltip and Scroll effect -->
+ <script type="text/javascript">
+ // Select all links with hashes
+$('a[href*="#"]')
+// Remove links that don't actually link to anything
+.not('[href="#"]')
+.not('[href="#0"]')
+.click(function(event) {
+// On-page links
+if (
+ location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+ &&
+ location.hostname == this.hostname
+) {
+ // Figure out element to scroll to
+ var target = $(this.hash);
+ target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+ // Does a scroll target exist?
+ if (target.length) {
+   // Only prevent default if animation is actually gonna happen
+   event.preventDefault();
+   $('html, body').animate({
+     scrollTop: target.offset().top
+   }, 1000, function() {
+     // Callback after animation
+     // Must change focus!
+     var $target = $(target);
+     $target.focus();
+     if ($target.is(":focus")) { // Checking if the target was focused
+       return false;
+     } else {
+       $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+       $target.focus(); // Set focus again
+     };
+   });
+ }
+}
+});
+ </script>
       </html>
