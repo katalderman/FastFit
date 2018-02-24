@@ -194,7 +194,6 @@ p {
 
 .full-width-FOOTER {
   background: linear-gradient(rgba(80,7,102,.56), rgba(80,7,102,.56)), url('../images/10-footer-running.jpg');
-  max-height: 400px;
   background-size: cover;
   background-position: center;
 }
@@ -287,6 +286,13 @@ h3 {
     text-align:center;
     font-weight: bold;
     text-transform:uppercase;
+  }
+
+  .logo-fastfit-green, .terms{
+    text-align:center !important;
+  }
+  .terms{
+    margin-bottom: 20px;
   }
 }
 
