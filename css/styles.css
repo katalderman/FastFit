@@ -158,33 +158,33 @@ p {
 }
 
 .full-width-02 {
-  background: linear-gradient(rgba(167, 255, 4, 0.76), rgba(167, 255, 4, 0.76)), url('../images/02.jpeg');
+  background: linear-gradient(rgba(167, 255, 4, 0.76), rgba(167, 255, 4, 0.76)), url('../images/02-weights-background.jpg');
   background-size:cover;
 }
 
 .fullwidthimage_04 {
-  background: url('../images/04.jpg');
+  background: url('../images/07-man-confidence.jpg');
   background-size: cover;
   background-position: center;
   min-height:400px;
 }
 
 .fullwidthimage_05{
-  background: url('../images/05.png');
+  background: url('../images/08-multi-workouts.png');
   background-size: cover;
   background-position: center;
   min-height:400px;
 }
 
 .fullwidthimage_06{
-  background: url('../images/06.jpeg');
+  background: url('../images/09-accountability.jpg');
   background-size: cover;
   background-position: center;
   min-height:400px;
 }
 
 .full-width-FOOTER {
-  background: linear-gradient(rgba(80,7,102,.56), rgba(80,7,102,.56)), url('../images/07.jpeg');
+  background: linear-gradient(rgba(80,7,102,.56), rgba(80,7,102,.56)), url('../images/10-footer-running.jpg');
   max-height: 400px;
   background-size: cover;
   background-position: center;
